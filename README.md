@@ -7,3 +7,5 @@
 存放歌曲用的是localstroge。
 
 播放歌曲用的是Aduio标签，怎么用大家可以去W3Cshoool上看文档。
+
+
