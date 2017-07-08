@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/iconfont.css" />
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+    <title>我的音乐播放器</title>
+</head>
+<body>
+	<div id="content">
+		<header>
+			<i class="iconfont" id="cancel">&#xe74e;</i>
+			<div id="music_name">就这样</div>
+			<i class="iconfont" id="set_player">&#xe64c;</i>
+		</header>
+		<section>
+			<div class="volume">
+				<i class="iconfont volume_icon">&#xe637;</i>
+				<div id="volume_div">
+					<div id="volume_inner"></div>
+					<span id="volume_btn"></span>
+				</div>
+				<span id="volume_show">00</span>
+			</div>
+			<div id="music_img">
+				<img src="http://i.gtimg.cn/music/photo/mid_album_300/F/6/001aCiDu2s9LF6.jpg" id="singer_Img"/>
+				<ul id="songlrc"></ul>
+			</div>
+			<div id="music_msg">
+				<div><span id="now_song"></span>/<span id="all_song"></span></div>
+				<div>MP3</div>
+				<div>128kbs</div>  
+				<i class="iconfont" name="1" id="playlayout">&#xe610;</i>
+			</div>
+			<audio src="http://ws.stream.qqmusic.qq.com/202814739.m4a?fromtag=46"   id="myaudio" ></audio>
+			<div id="time">
+				<span id="time_start">00:00</span>
+				<div id="time_inner">
+					<div id="time_inner_div"></div>
+					<span id="time_btn"></span>  
+				</div>
+				<span id="time_end">04:06</span>
+			</div>
+			<div class="controls_inner">
+				<i class="iconfont" id="up_music">&#xe76e;</i>
+                <i class="iconfont" id="player_and_pause">&#xe63b;</i>
+                <i class="iconfont" id="down_music">&#xe76f;</i>
+			</div>
+		</section>
+		<footer>
+			<div>
+				<i class="iconfont icon" id="history_icon">&#xe63e;</i>
+				<span>列表</span>
+			</div>
+			<div>
+				<i class="iconfont icon" id="like_icon">&#xe639;</i>
+				<span>喜爱</span>
+			</div>
+			<div>
+				<i class="iconfont icon" id="player" style="color:red">&#xe646;</i>
+				<span style="color: red;">播放器</span>
+			</div>
+			<div id="about">
+				<i class="iconfont icon">&#xe609;</i>
+				<span>关于</span>
+			</div>
+			<div>
+				<i class="iconfont icon" id="discover">&#xe606;</i>
+				<span>发现</span>
+			</div>
+		</footer>
+	</div>
+	
+	<div id="history">
+		<h3>当前列表</h3>
+		<ul id="history_list">
+				<script type="text/plain" id="history_html">
+				<span class="songcount">1</span>
+				<div class="history_songname">童话镇</div>
+				<i class="iconfont addlike">&#xe639;</i>
+				<i class="iconfont delete">&#xe633;</i>
+				<input type="hidden" class="histry_songid" />
+				</script>
+		</ul>
+	</div>
+	
+	<script type="text/plain" id="like_html">
+					<span class="like_songcount">1</span>
+					<div class="like_songname">童话镇</div>
+					<i class="iconfont like_delete">&#xe633;</i>
+					<input type="hidden" class="like_songid" />
+	</script>
+	<div id="like">
+		<h3>我喜欢的</h3>
+		<ul id="like_list">	
+		</ul>
+	</div>
+</body>
+</html>

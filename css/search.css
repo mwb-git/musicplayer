@@ -1,0 +1,50 @@
+html,body{height: 100%; width: 100%; font-family: "微软雅黑";}
+.content{display:flex; flex-direction: column; height: 100%; width: 100%;}
+
+header{height: .44rem; width: 100%; font-size: .16rem; display: flex; border-bottom: .02rem solid #666; background: #eee;}
+header #search{height: .24rem;  width: 70%; margin-top: .09rem; border-radius: .05rem; border: .02rem solid burlywood; text-indent: .1rem;}
+header span{width: 15%; text-align: center; line-height: .44rem; color: darkgoldenrod}
+header #cancel{font-size: .2rem; font-weight: 700;}
+
+section{flex: 1;display: flex; flex-direction: column; background: #eee; font-size: .16rem; }
+section>div{flex:1; display: flex; flex-direction: column; margin:0 .2rem;}
+section>div #inland_tlt{display: flex;height: .4rem;  border-bottom: .02rem solid darkgoldenrod;}
+section>div #inland_tlt h3{line-height: .4rem; color: #8B0000;}
+section>div #inland_tlt span{flex: 1; text-align: right;line-height: .5rem; font-size: .14rem; color: orangered;}
+section>div #inland_content{height: 1.45rem; width: 100%; overflow-x: auto; margin-top: .05rem;}
+section>div #inland_content li{display: flex;}
+section>div #inland_content li .i_songcount{width: .24rem; line-height: .25rem; text-align: center; font-size: .20rem; color: mediumvioletred;}
+section>div #inland_content li .i_songname{width: 2.3rem; line-height: .3rem; white-space: nowrap; overflow: hidden;}
+section>div #inland_content li .i_addsong{width: .4rem; line-height: .3rem; font-size: .18rem; font-weight: 900; text-align: center;}
+section>div #inland_content li .i_downsong{width: .4rem; line-height: .3rem; font-size: .2rem; font-weight: 900; text-align: center;}
+
+section>div #ea_tlt{display: flex;height: .4rem;  border-bottom: .02rem solid darkgoldenrod;}
+section>div #ea_tlt h3{line-height: .4rem;color: #8B0000;}
+section>div #ea_tlt span{flex: 1; text-align: right;line-height: .5rem; font-size: .14rem; color: orangered;}
+section>div #ea_content{height: 1.5rem; width: 100%; overflow-x: auto;}
+section>div #ea_content li{display: flex;}
+section>div #ea_content li .e_songcount{width: .24rem; line-height: .25rem; text-align: center; font-size: .20rem; color: mediumvioletred;}
+section>div #ea_content li .e_songname{width: 2.3rem; line-height: .3rem;white-space: nowrap; overflow: hidden;}
+section>div #ea_content li .e_addsong{width: .4rem; line-height: .3rem; font-size: .18rem; font-weight: 900; text-align: center;}
+section>div #ea_content li .e_downsong{width: .4rem; line-height: .3rem; font-size: .2rem; font-weight: 900; text-align: center;}
+
+section>div #hongk_tlt{display: flex;height: .4rem;  border-bottom: .02rem solid darkgoldenrod;}
+section>div #hongk_tlt h3{line-height: .4rem; color: #8B0000;}
+section>div #hongk_tlt span{flex: 1; text-align: right;line-height: .5rem; font-size: .14rem; color: orangered;}
+section>div #hongk_content{height: 1.5rem; width: 100%;  overflow-x: auto;}
+section>div #hongk_content li{display: flex;}
+section>div #hongk_content li .h_songcount{width: .24rem; line-height: .25rem; text-align: center; font-size: .20rem; color: mediumvioletred;}
+section>div #hongk_content li .h_songname{width: 2.3rem; line-height: .3rem; white-space: nowrap; overflow: hidden;}
+section>div #hongk_content li .h_addsong{width: .4rem; line-height: .3rem; font-size: .18rem; font-weight: 900; text-align: center;}
+section>div #hongk_content li .h_downsong{width: .4rem; line-height: .3rem; font-size: .2rem; font-weight: 900; text-align: center;}
+
+footer{ width: 100%;height: .44rem; border-top: .02rem solid #666;display: flex;background: #eee;}
+footer div{flex: 1; display: flex; flex-direction: column; text-align: center; height: .44rem;}
+footer .icon{ font-size: .22rem; padding-top: .02rem; color: #666;}
+footer div span{font-size: .12rem;padding-top: .02rem; color:#666}
+
+
+
+
+
+

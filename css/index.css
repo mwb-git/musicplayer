@@ -1,0 +1,70 @@
+html,body{height: 100%; width: 100%;}
+#content{height: 100%; width: 100%; display: flex; flex-direction: column;}
+
+header{display: flex; width: 100%; height: .44rem; border-bottom: .02rem solid #666;background: #eee;}
+header #cancel{font-size: .26rem; width: .6rem; height: .44rem; text-align: center; line-height: .44rem; color: orangered;}
+header div{font-size: .18rem; flex: 1; text-align: center; line-height: .44rem; color:darkred; font-family: "微软雅黑";}
+header #set_player{font-size: .26rem; width: .6rem; height: .44rem; text-align: center; line-height: .44rem;color: orangered;}
+
+section{flex:1; display: flex; flex-direction: column;}
+
+section .volume{display:flex;height: .44rem; width: 80%; padding: 0 10%; line-height: .44rem; position: relative;background: #eee;}
+section .volume_icon{font-size: .22rem;margin-right: .05rem;}
+section #volume_div{width: 80%; height: .04rem;background: #ccc; margin-top: .2rem;  position: relative;}
+section #volume_div #volume_inner{height: .04rem; width: 0rem; background: #000;}
+section #volume_btn{position: absolute; width: .1rem; height: .2rem; border-radius: .05rem; background: #666; top:-.08rem;}
+section #volume_show{width: .4rem; height: .44rem; font-size: .16rem; text-align: center;}
+
+section #music_img{flex: 1; font-size: .16rem; text-align: center; height: 3.9rem; width: 3.75rem;overflow: auto; position: relative; }
+section #music_img #songlrc{text-align: center; background: #ccc; position: absolute; left: 0px; top: 0px; width: 3.75rem;}
+section #music_img #songlrc li{padding: .05rem 0; height: .3rem; width: 3.75rem; line-height: .3rem;}
+section #music_img img{height: 3.9rem; width: 3.75rem;}
+
+section #music_msg{height: .4rem; width: 90%; padding: 0 10% 0 0; display: flex; background: #eee;}
+section #music_msg div{font-size: .16rem; width: .5rem; height: .4rem; text-align: center; line-height: .4rem;}
+section #music_msg i{width: 1.8rem; height: .4rem ; text-align: right; line-height: .4rem; font-size: .24rem; padding-right: .2rem;}
+
+
+section #time{height: .4rem; width: 80%; padding: 0 10%; display: flex; background: #eee;}
+section #time #time_start{width: 16%; font-size: .16rem; line-height: .4rem;padding-right: 4%; }
+section #time #time_inner{height: .04rem; width: 60%; margin-top: .18rem; background: #ccc;position: relative;}
+section #time #time_inner_div{height: .04rem; width: 0%; background: #000;}
+section #time #time_end{width: 16%; font-size: .16rem; line-height: .4rem;padding-left: 4%; }
+section #time #time_btn{position: absolute;width: .1rem; height: .2rem; border-radius: .05rem; background: #666; top:-.08rem; left: 0rem;}
+
+section .controls_inner{height: .6rem; width: 100%; display: flex;background: #eee;}
+section .controls_inner i{height:100%; font-size: .28rem; text-align: center; line-height: .6rem;}
+section .controls_inner #up_music{width: 25%; height:100%;}
+section .controls_inner #player_and_pause{width: 50%; height:100%;font-size: .32rem; color: #666;}
+section .controls_inner #down_music{width: 25%; height:100%;}
+
+footer{ width: 100%; height: .44rem; border-top: .02rem solid #666;display: flex;background: #eee;}
+footer div{flex: 1; display: flex; flex-direction: column; text-align: center; height: .44rem;}
+footer .icon{ font-size: .22rem; padding-top: .04rem; color: #666;}
+footer div span{font-size: .12rem;padding-top: .02rem; color:#666}
+
+
+#history{height: 4.5rem; width: 3.2rem; position: absolute; top: 50%; left: 50%; margin-left: -1.6rem; 
+margin-top: -2.25rem; border: .02rem solid #666; background: #eee; display: none;}
+
+#history h3{font-size: .2rem; height: .3rem; line-height: .3rem; text-align: center; 
+border-bottom: .02rem solid darkgoldenrod; color: indianred; font-family: "微软雅黑";}
+
+#history_list{height: 4.1rem; overflow: auto;}
+#history_list li{display:flex ; font-size: .18rem; height: .4rem; font-family: "微软雅黑";}
+#history_list .songcount{width: .3rem; text-align: center; line-height: .4rem;}
+#history_list .history_songname{flex: 1; text-align: center; line-height: .4rem; overflow: hidden; font-size: .14rem;}
+#history_list .addlike{width: .6rem; text-align: center; line-height: .4rem; font-size: .22rem; font-weight: 900;}
+#history_list .delete{ width: .6rem;text-align: center; line-height: .4rem; font-size: .22rem; font-weight: 900;}
+
+#like{height: 4.5rem; width: 3.2rem; position: absolute; top: 50%; left: 50%; margin-left: -1.6rem; 
+margin-top: -2.25rem; border: .02rem solid #666; background: #eee; display: none;}
+
+#like h3{font-size: .2rem; height: .3rem; line-height: .3rem; text-align: center; 
+border-bottom: .02rem solid darkgoldenrod; color: indianred; font-family: "微软雅黑";}
+
+#like_list{height: 4.1rem; overflow: auto;}
+#like_list li{display:flex ; font-size: .18rem; height: .4rem; font-family: "微软雅黑";}
+#like_list .like_songcount{width: .3rem; text-align: center; line-height: .4rem;}
+#like_list .like_songname{flex: 1; text-align: center; line-height: .4rem;overflow: hidden;}
+#like_list .like_delete{ width: .4rem;text-align: center; line-height: .4rem; font-size: .22rem; font-weight: 900;}

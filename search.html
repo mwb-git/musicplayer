@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>搜索页面</title>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/search.css"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+	</head>
+	<body>
+		<div class="content">
+		<header>
+		<span id="cancel" class="iconfont">&#xe74e;</span>
+		<input type="text" id="search" value="海量音乐任你搜索"/>
+		<span id="search_btn">搜索</span>
+		</header>
+		<section>
+			<div id="inland">
+				<div id="inland_tlt">
+					<h3>内地热门</h3>
+					<span class="iconfont">更多&#xe74b;</span>
+				</div>
+				<ul id="inland_content">
+					<script type="text/plain" id="i_html">
+						<div class="i_songcount">1</div>
+						<div class="i_songname">从你的全世界路过</div>
+						<div class="iconfont i_addsong">&#xe644;</div>
+						<div class="iconfont i_downsong">&#xe613;</div>
+					</script>
+				</ul>
+			</div>
+			<div id="ea">
+				<div id="ea_tlt">
+					<h3>欧美热门</h3>
+					<span class="iconfont">更多&#xe74b;</span>
+				</div>
+				<ul id="ea_content">
+					<script type="text/plain" id="e_html">
+						<div class="e_songcount">1</div>
+						<div class="e_songname">从你的全世界路过</div>
+						<div class="iconfont e_addsong">&#xe644;</div>
+						<div class="iconfont e_downsong">&#xe613;</div>
+					</script>
+				</ul>
+			</div>
+			<div id="hongk">
+				<div id="hongk_tlt">
+					<h3>港台热门</h3>
+					<span class="iconfont">更多&#xe74b;</span>
+				</div>
+				<ul id="hongk_content">
+					<script type="text/plain" id="h_html">
+						<div class="h_songcount">1</div>
+						<div class="h_songname">从你的全世界路过</div>
+						<div class="iconfont h_addsong">&#xe644;</div>
+						<div class="iconfont h_downsong">&#xe613;</div>
+					</script>
+				</ul>
+			</div>
+		</section>
+		<footer id="footer">
+			<div>
+				<i class="iconfont icon">&#xe63e;</i>
+				<span>列表</span>
+			</div>
+			<div>
+				<i class="iconfont icon">&#xe646;</i>
+				<span>歌曲</span>
+			</div>
+			<div id="player">
+				<i class="iconfont icon">&#xe646;</i>
+				<span>播放器</span>
+			</div>
+			<div>
+				<i class="iconfont icon">&#xe609;</i>
+				<span>唱片</span>
+			</div>
+			<div>
+				<i class="iconfont icon" id="discover" style="color: red">&#xe606;</i>
+				<span style="color: red">发现</span>
+			</div>
+		</footer>
+		</div>
+	</body>
+	<script src="js/search.js"></script>
+</html>
